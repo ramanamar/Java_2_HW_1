@@ -1,5 +1,5 @@
 /**
- * Created by FlameXander on 09.09.2016.
+ * Created by Raman Kryvasheyeu on 13.09.2016.
  */
 public class Human implements Sportsman {
     private String name;

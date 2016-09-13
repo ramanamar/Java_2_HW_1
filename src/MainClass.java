@@ -1,6 +1,13 @@
 public class MainClass {
     public static void main(String[] args) {
-        Human h1 = new Human("BobWithoutTransport");
+        TrimTrail tt = new TrimTrail();
+        Team t1 = new Team("FirstTeam");
+        Team t2 = new Team("SecondTeam");
+        tt.doIt(t1);
+        tt.doIt(t2);
+        t1.showResults();
+        t2.showResults();
+/*        Human h1 = new Human("BobWithoutTransport");
         Human h2 = new Human("BobOnHorse");
         Human h3 = new Human("BobOnMoto");
         h2.getOn(new Horse("Almaz"));
@@ -14,11 +21,11 @@ public class MainClass {
                 o.doIt(s);
                 if (!s.isOnDistance()) break;
             }
-        }
+        }*/
 
-        System.out.println("====================");
+/*        System.out.println("====================");
         for (Sportsman o : participants) {
             o.showResults();
-        }
+        }*/
     }
 }
